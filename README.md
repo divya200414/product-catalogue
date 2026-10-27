@@ -1,16 +1,74 @@
-# React + Vite
+# ShopSphere – Product Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive product catalogue built using React and Vite. It fetches product data from the DummyJSON API and allows users to search, filter, and sort products.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Fetches products from the DummyJSON API
+* Search products by name
+* Filter products by category
+* Filter products by minimum and maximum price
+* Sort products by price and rating
+* Displays an empty state when no products match
+* Responsive layout for desktop, tablet, and mobile
+* Loading and error states
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* CSS
+* DummyJSON API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Install Node.js and npm.
+
+### Installation
+
+1. Clone the repository:
+
+   bash
+   git clone https://github.com/divya200414/product-catalogue.git
+   
+
+2. Open the project folder:
+
+   bash
+   cd product-catalogue
+   
+
+3. Install dependencies:
+
+   bash
+   npm install
+   
+
+4. Start the development server:
+
+   bash
+   npm run dev
+   
+
+5. Open the local URL displayed in your terminal.
+
+## API
+
+Product data is fetched from:
+
+https://dummyjson.com/products?limit=20
+
+## Design Decisions
+
+* React state manages search, category, price filters, and sorting.
+* Product data is fetched from DummyJSON instead of using hardcoded products.
+* CSS Grid and media queries provide a responsive layout.
+* Loading, error, and empty states help users understand the current application status.
+* Product prices are displayed in USD to match the API data.
+
+## Author
+
+Divya Saganaboyina
